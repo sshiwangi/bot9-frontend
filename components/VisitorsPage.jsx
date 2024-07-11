@@ -10,18 +10,21 @@ function VisitorsPage() {
           title: "Breakdown by Visitor Interaction",
           items: detailed.interactionBreakdown,
         }}
+        showCategoryBar={false}
       />
       <Breakdown
         data={{
           title: "Breakdown by Visitor Type",
           items: detailed.visitorTypeBreakdown,
         }}
+        showCategoryBar={true}
       />
       <Breakdown
         data={{
           title: "Breakdown by Visitor Location",
           items: detailed.locationBreakdown,
         }}
+        showCategoryBar={true}
       />
     </>
   );

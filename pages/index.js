@@ -37,12 +37,6 @@ export default function Home() {
   const selectedTab =
     tabs.find((t) => t.name.toLowerCase() === tab.toLowerCase()) || tabs[0];
 
-  // useEffect(() => {
-  //   setLoading(true);
-  //   const timer = setTimeout(() => setLoading(false), 500); // Simulate a loading delay
-  //   return () => clearTimeout(timer);
-  // }, [tab]);
-
   return (
     <main className={`flex min-h-screen gap-4 flex-col`}>
       <div className="flex justify-between items-center">
